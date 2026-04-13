@@ -1,0 +1,16 @@
+# Secrets and credentials
+*.env
+.env*
+secrets/
+*.key
+*.pem
+*.crt
+
+# Docker volume data
+adguard/
+npm/data/
+npm/letsencrypt/
+
+# OS
+.DS_Store
+Thumbs.db
