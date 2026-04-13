@@ -11,4 +11,4 @@ network:
       nameservers:
         addresses:
           - 192.168.2.3
-          - 149.112.112.112
+          - 9.9.9.9
