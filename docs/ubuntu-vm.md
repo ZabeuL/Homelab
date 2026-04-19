@@ -67,3 +67,19 @@ Max 30MB of logs per container (3 × 10MB rotating files).
 ## Docker Compose
 
 All services are defined in `/opt/homelab/docker-compose.yml`. Bind mounts use subdirectories under `/opt/homelab/` so config files are directly accessible on disk.
+
+## Claude Code
+
+Installed on the Ubuntu VM as the CLI tool for running AI-assisted tasks directly on the server.
+
+**Install:**
+
+```bash
+npm install -g @anthropic-ai/claude-code
+```
+
+**Purpose:** Syncs Notion documentation to the repo's markdown files on demand. Claude Code reads a Notion integration token stored locally, fetches the relevant pages via the Notion REST API, and rewrites the corresponding `.md` files under `/opt/homelab/docs/`.
+
+**Token storage:** `/opt/homelab/personal/notion-token` — this directory is gitignored and never pushed to GitHub.
+
+**Usage:** Triggered manually after completing a phase or resolving a notable issue. Not automated.

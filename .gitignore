@@ -6,6 +6,9 @@ secrets/
 *.pem
 *.crt
 
+# Personal / local tokens
+personal/
+
 # Docker volume data
 adguard/
 npm/data/
